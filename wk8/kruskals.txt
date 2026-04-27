@@ -1,0 +1,22 @@
+V vertices
+E edges
+
+E log E  + E * (V + E) => E^2
+
+sort all the edges // O(E log E)
+
+while i havent added V-1 edges: // O(E)
+    add the next smallest edge // O(1)
+
+    if it has created a cycle: // O(V + E)
+        remove it // O(1)
+
+
+// beyond the course: union-find data structure makes   
+    cycle checking step O(log V)
+
+E log E + E log V => E log V
+
+E <= V^2
+
+E log E => E log V^2 => 2 * E log V

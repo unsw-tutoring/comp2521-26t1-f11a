@@ -1,0 +1,12 @@
+V vertices
+E edges
+
+repeat V-1 times: // O(V)
+    for all edges v-w where inMST[v] && !inMST[w] and find min // O(E)
+    insert into MST // O(1)
+
+O(V * E)
+
+if you use a Fibonacci heap
+E + V log V
+
